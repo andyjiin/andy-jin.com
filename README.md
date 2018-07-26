@@ -1,2 +1,2 @@
 # andy-jin.com
-Personal WEbsite
+Personal Website
