@@ -1,26 +1,37 @@
 body {
-  background-color: #000;
-  margin: 0;
+    background-color: #000;
+    margin: 0;
 }
 
 canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
 }
 
 h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 18px;
+    position:absolute;
+    text-align: center;
+    top:138px;
+    left:20px;
+}
+
 homepage {
-  position: absolute;
-  top: 10px;
-  right: 43%;
-  font-family: 'Abel';font-size: 40px;
-  color: #FFFFFF;
+    position: absolute;
+    top: -20px;
+    right: 43%;
+
+    /*Font options*/
+    font-family: 'Abel';
+    font-size: 40px;
+    color: #FFFFFF;
 }
 
 .button {
@@ -37,6 +48,8 @@ homepage {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+
+    /*Button properties*/
     width:150px;
     height:60px;
 }
@@ -46,7 +59,7 @@ homepage {
     color: white;
     border: 2px solid #FFFFFF;
     position: absolute;
-    bottom: -20px;
+    bottom: -60px;
     left: -15%;
 }
 
@@ -60,7 +73,7 @@ homepage {
     color: white;
     border: 2px solid #FFFFFF;
     position: absolute;
-    bottom: -20px;
+    bottom: -60px;
     left: 55%;
 }
 
@@ -85,42 +98,40 @@ homepage {
 }
 
 .softwareMenu {
-  position: fixed;
-  bottom: 650px;
-  width: 100%;
-  height: 100px;
-  border-style: solid;
-  border-color: #FFF;
-  border-width: 5px;
-  background: transparent;
-  z-index: 2;
-  transition: all 1s; 
-  font-family: 'Abel';
-  font-size: 15px;
-  color: #FFF;
-  cursor: pointer;
+    position: fixed;
+    bottom: 650px;
+    width: 100%;
+    height: 100px;
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 5px;
+    background: transparent;
+    font-size: 15px;
+    transition: all 1s; 
+    cursor: pointer;
+
+    z-index: 2;
 }
 
 .softwareMenu:hover {
-  background-color: #FFFFFF;
-  color: black;
+    background-color: #FFFFFF;
+    color: black;
 }
 
 .hardwareMenu {
-  position: fixed;
-  bottom: 525px;
-  width: 100%;
-  height: 100px;
-  border-style: solid;
-  border-color: #FFF;
-  border-width: 5px;
-  background: transparent;
-  z-index: 2;
-  transition: all 1.25s;
-  font-family: 'Abel';
-  font-size: 15px;
-  color: #FFF;
-  cursor: pointer;
+    position: fixed;
+    bottom: 525px;
+    width: 100%;
+    height: 100px;
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 5px;
+    background: transparent;
+    transition: all 1.25s;
+    font-size: 15px;
+    cursor: pointer;
+
+    z-index: 2;
 }
 
 .hardwareMenu:hover {
@@ -137,12 +148,11 @@ homepage {
   border-color: #FFF;
   border-width: 5px;
   background: transparent;
-  z-index: 2;
   transition: all 1.5s;
-  font-family: 'Abel';
   font-size: 15px;
-  color: #FFF;
   cursor: pointer;
+
+  z-index: 2;
 }
 
 .aboutMeMenu:hover {
@@ -159,12 +169,11 @@ homepage {
   border-color: #FFF;
   border-width: 5px;
   background: transparent;
-  z-index: 2;
   transition: all 1.75s;
-  font-family: 'Abel';
   font-size: 15px;
-  color: #FFF;
   cursor: pointer;
+
+  z-index: 2;
 }
 
 .galleryMenu:hover {
@@ -192,11 +201,11 @@ homepage {
 }
 
 .footer {
-  position: fixed;
-  bottom: 50px;
+    position: fixed;
+    bottom: 50px;
 }
 
 .header {
-  position: fixed;
-  top: 0px;
+    position: fixed;
+    top: 0px;
 }
