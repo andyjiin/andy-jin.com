@@ -7,35 +7,49 @@
 
 <body>
 	<div class="parallax">
+
 		<head>
 			<canvas id="drawing_canvas"></canvas>
 		</head>
 
 		<homepage>
-			<h1> Andy Jin </h1>
-			<button class="button resumeButton"> Resume </button>
-			<button class="button readButton"> Continue </button>
+			<div id="header" class="header"></div>
 
-			<div id="software" class="softwareMenu hide">
+            <h1> Andy Jin </h1>
+
+            <h2> Computer Engineering @ UWaterloo</h2>
+
+			<button class="button resumeButton" onclick="window.location.href='resume.pdf'" target="blank"> Resume </button>
+			<button class="button readButton" onclick="smoothScroll(document.getElementById('footer'))"> Read More </button>
+
+			<div id="goUp" class="goUp hide" onclick="smoothScroll(document.getElementById('header'))">
+				<img src="arrowUp.png">
+			</div>
+
+            <!-- Possible navigations -->
+			<div id="software" class="softwareMenu hide" onclick="window.location.href='http://www.andy-jin.com/software'">
 				<h1> Software Projects </h1>
 			</div>
 
-			<div id="hardware" class="hardwareMenu hide">
+			<div id="hardware" class="hardwareMenu hide" onclick="window.location.href='http://www.andy-jin.com/hardware'">
 				<h1> Hardware Projects </h1>
 			</div>
 
-			<div id="aboutMe" class="aboutMeMenu hide">
+			<div id="aboutMe" class="aboutMeMenu hide" onclick="window.location.href='http://www.andy-jin.com/about-me'">
 				<h1> About Me </h1>
 			</div>
 
-			<div id="gallery" class="galleryMenu hide">
+			<div id="gallery" class="galleryMenu hide" onclick="window.location.href='http://www.andy-jin.com/gallery'">
 				<h1> Gallery </h1>
 			</div>
+
+			<div id="footer" class="footer"></div>
 		</homepage>
 
 	</div>
 </body>
 
+<!-- script declaration -->
 <script src="menu.js"></script>
 <script src="pendulum.js"></script>
 
