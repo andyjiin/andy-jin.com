@@ -130,3 +130,7 @@ window.onload = function() {
     initGraphics();
     requestAnimationFrame(loop);
 };
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
