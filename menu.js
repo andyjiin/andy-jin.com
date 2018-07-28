@@ -4,9 +4,17 @@ var aboutMe = document.getElementById("aboutMe");
 var gallery = document.getElementById("gallery");
 var goUp = document.getElementById("goUp");
 
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    xScreen = w.innerWidth || e.clientWidth || g.clientWidth,
+    yScreen = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+
 var myScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= 500) {
+    if (y >= yScreen/1.5) {
         software.className = "softwareMenu show"
         hardware.className = "hardwareMenu show"
         aboutMe.className = "aboutMeMenu show"
@@ -45,3 +53,4 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
