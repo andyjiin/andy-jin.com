@@ -14,7 +14,7 @@ var w = window,
 
 var myScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= yScreen/1.5) {
+    if (y >= yScreen/2) {
         software.className = "software menu show"
         hardware.className = "hardware menu show"
         aboutMe.className = "aboutMe menu show"
