@@ -11,10 +11,13 @@ var w = window,
     xScreen = w.innerWidth || e.clientWidth || g.clientWidth,
     yScreen = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
+var div = document.querySelector('test');
+
 
 var myScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= yScreen/2) {
+    console.log(isScrolledIntoView(div));
+    if (y >= yScreen/2 || isScrolledIntoView(div)) {
         software.className = "software menu show"
         hardware.className = "hardware menu show"
         aboutMe.className = "aboutMe menu show"
@@ -27,6 +30,24 @@ var myScrollFunc = function () {
         gallery.className = "gallery menu hide"
         goUp.className = "goUp hide"
     }
+};
+
+window.onload = function() {
+    console.log(isScrolledIntoView(div));
+    if (isScrolledIntoView(div)){
+        software.className = "software menu show"
+        hardware.className = "hardware menu show"
+        aboutMe.className = "aboutMe menu show"
+        gallery.className = "gallery menu show"
+        goUp.className = "goUp show"
+    } else {
+        software.className = "software menu hide"
+        hardware.className = "hardware menu hide"
+        aboutMe.className = "aboutMe menu hide"
+        gallery.className = "gallery menu hide"
+        goUp.className = "goUp hide"
+    }
+
 };
 
 window.addEventListener("scroll", myScrollFunc);
@@ -52,5 +73,17 @@ window.smoothScroll = function(target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
 }
 
