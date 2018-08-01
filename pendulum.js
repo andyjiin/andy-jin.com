@@ -1,5 +1,12 @@
-var viewWidth = 1200;
-var viewHeight = 700;
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    xScreen = w.innerWidth || e.clientWidth || g.clientWidth,
+    yScreen = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+var viewWidth = xScreen*0.75; //window.innerWidth*0.75;
+var viewHeight = yScreen*0.75; //window.innerHeight*0.75;
 var drawingCanvas = document.getElementById("drawing_canvas");
 var timeStep = 1/60;
 var time = 0;
