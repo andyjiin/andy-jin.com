@@ -14,17 +14,17 @@ var w = window,
 
 var myScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= yScreen/1.5) {
-        software.className = "softwareMenu show"
-        hardware.className = "hardwareMenu show"
-        aboutMe.className = "aboutMeMenu show"
-        gallery.className = "galleryMenu show"
+    if (y >= yScreen/2) {
+        software.className = "software menu show"
+        hardware.className = "hardware menu show"
+        aboutMe.className = "aboutMe menu show"
+        gallery.className = "gallery menu show"
         goUp.className = "goUp show"
     } else {
-        software.className = "softwareMenu hide"
-        hardware.className = "hardwareMenu hide"
-        aboutMe.className = "aboutMeMenu hide"
-        gallery.className = "galleryMenu hide"
+        software.className = "software menu hide"
+        hardware.className = "hardware menu hide"
+        aboutMe.className = "aboutMe menu hide"
+        gallery.className = "gallery menu hide"
         goUp.className = "goUp hide"
     }
 };
