@@ -99,8 +99,6 @@ function draw() {
 
     drawCircle(circ1);
     drawCircle(circ2);
-
-    context.fillText(xScreen, 50, 10);
 }
 
 function drawCircle(c) {
