@@ -5,16 +5,16 @@ var w = window,
     xScreen = w.innerWidth || e.clientWidth || g.clientWidth,
     yScreen = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
-var viewWidth = xScreen*0.75; //window.innerWidth*0.75;
-var viewHeight = yScreen*0.75; //window.innerHeight*0.75;
+var viewWidth = xScreen; //window.innerWidth*0.75;
+var viewHeight = yScreen; //window.innerHeight*0.75;
 var drawingCanvas = document.getElementById("drawing_canvas");
 var timeStep = 1/60;
 var time = 0;
 var context;
 
 // Pendulum variables
-var mass1 = 10;
-var mass2 = 10;
+var mass1 = (xScreen+yScreen)*0.004;
+var mass2 = (xScreen+yScreen)*0.004;
 var mu = 0;
 var Theta1 = Math.PI * 0.5;
 var Theta2 = Math.PI * 0.5;
@@ -22,8 +22,8 @@ var d2Theta1 = 0;
 var d2Theta2 = 0;
 var dTheta1 = 0;
 var dTheta2 = 0;
-var length1 = 120;
-var length2 = 120;
+var length1 = (xScreen+yScreen)*0.05;
+var length2 = (xScreen+yScreen)*0.05;
 var anchorX = viewWidth * 0.5;
 var anchorY = viewHeight * 0.3;
 var g = 9.8;
@@ -99,6 +99,8 @@ function draw() {
 
     drawCircle(circ1);
     drawCircle(circ2);
+
+    context.fillText(xScreen, 50, 10);
 }
 
 function drawCircle(c) {

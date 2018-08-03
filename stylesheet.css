@@ -1,169 +1,3 @@
-body {
-    background-color: #000;
-    margin: 0;
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    font-size: 10px;
-    position:absolute;
-    text-align: center;
-    top:66%;
-    left:5%;
-}
-
-homepage {
-    position: absolute;
-    top: 0%;
-    right: 43%;
-
-    /*Font options*/
-    font-family: 'Abel';
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
-.button {
-    background-color: #FFFFFF;
-    border: none;
-    color: white;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Abel';
-    font-size: 8px;
-    margin: 2px 1px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-    /*Button properties*/
-    width:70px;
-    height:30px;
-}
-
-@media (min-width: 600px) {
-    h2 { 
-        font-size: 14px;
-        position:absolute;
-        text-align: center;
-        top:66%;
-        left:5%;
-    }
-
-    homepage {
-        position: absolute;
-        top: 0%;
-        right: 43%;
-
-        /*Font options*/
-        font-family: 'Abel';
-        font-size: 30px;
-        color: #FFFFFF;
-    }
-
-    .button {
-        background-color: #FFFFFF;
-        border: none;
-        color: white;
-        padding: 10px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Abel';
-        font-size: 11px;
-        margin: 3px 1px;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-
-        /*Button properties*/
-        width:100px;
-        height:40px;
-    }
-}
-
-@media (min-width: 1000px) {
-    h2 { 
-        font-size: 18px;
-        position:absolute;
-        text-align: center;
-        top:66%;
-        left:5%;
-    }
-
-    homepage {
-        position: absolute;
-        top: 0%;
-        right: 43%;
-
-        /*Font options*/
-        font-family: 'Abel';
-        font-size: 40px;
-        color: #FFFFFF;
-    }
-
-    .button {
-        background-color: #FFFFFF;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family: 'Abel';
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-
-        /*Button properties*/
-        width:150px;
-        height:60px;
-    }
-}
-
-.resumeButton {
-    background-color: #000000;
-    color: white;
-    border: 2px solid #FFFFFF;
-    position: absolute;
-    bottom: -60px;
-    left: -15%;
-}
-
-.resumeButton:hover {
-    background-color: #FFFFFF;
-    color: black;
-}
-
-.readButton {
-    background-color: #000000;
-    color: white;
-    border: 2px solid #FFFFFF;
-    position: absolute;
-    bottom: -60px;
-    left: 55%;
-}
-
-.readButton:hover {
-    background-color: #FFFFFF;
-    color: black;
-}
-
 .parallax {
     background-image: url("calvin&hobbes.jpg");
 
@@ -179,63 +13,135 @@ homepage {
     z-index: 1;
 }
 
+body {
+    background-color: #000;
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+  text-align: center;
+  position:relative;
+  top:-5vh;
+  font-size: 9vh;
+}
+
+h2 {
+  text-align: center;
+  position:relative;
+  top:-11vh;
+  font-size: 2vh;
+}
+
+h3 {
+  text-align: center;
+  position:relative;
+  font-size: 4vh;
+}
+
+h4 {
+  text-align: center;
+}
+
+.heading {
+  width:100%;
+  height:24vh;
+  position:absolute;
+  color:white;
+  top:50%;
+  margin-top: -45vh;
+
+  z-index: 2;
+
+  /*Font options*/
+  font-family: 'Abel';
+  color: #FFFFFF;
+
+  border:solid;
+}
+
+.buttons {
+  position:absolute;
+  color: white;
+  border:solid;
+  height:100%;
+  width:20vw;
+  left:39.5vw;
+}
+
+.button {
+    background-color: #FFFFFF;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Abel';
+    font-size: 0.9vw;
+
+    /*Button properties*/
+    width:8vw;
+    height:4vw;
+}
+
+.resumeButton {
+  position:absolute;
+  background-color: #000000;
+  color: white;
+  border: 0.2vh solid #FFFFFF;
+  bottom: -1vh;
+  left:52vw;
+}
+
+.resumeButton:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.readButton {
+  position:absolute;
+  background-color: #000000;
+  color: white;
+  border: 0.2vh solid #FFFFFF;
+  bottom: -1vh;
+  left:40vw;
+}
+
+.readButton:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
 .menu {
     position: fixed;
     width:100%;
-    height:12%;
+    height:12vh;
     border-style: solid;
     border-color: #FFF;
-    border-width: 2px;
+    border-width: 0.5vh;
     background: transparent;
-    font-size: 5px;
+    font-size: 0.7vh;
     cursor: pointer;
     z-index: 2;
+
+    /*Font options*/
+    font-family: 'Abel';
+    color: #FFFFFF;
 }
 
 img {
-    height:20px;
-    width:auto;
-  }
-
-
-@media (min-width: 500px) {
-  .menu {
-      position: fixed;
-      width:100%;
-      height:12%;
-      border-style: solid;
-      border-color: #FFF;
-      border-width: 3px;
-      background: transparent;
-      font-size: 10px;
-      cursor: pointer;
-      z-index: 2;
-  }
-
-  img {
-    height:40px;
-    width:auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .menu {
-      position: fixed;
-      width:100%;
-      height:12%;
-      border-style: solid;
-      border-color: #FFF;
-      border-width: 5px;
-      background: transparent;
-      font-size: 15px;
-      cursor: pointer;
-      z-index: 2;
-  }
-
-  img {
-    height:80px;
-    width:auto;
-  }
+  height:9vh;
+  width:auto;
 }
 
 .menu:hover {

@@ -10,43 +10,43 @@
 
 		<canvas id="drawing_canvas"></canvas>
 
-		<homepage>
-			<div id="header" class="header"></div>
-
+		<div id = "heading" class = "heading">
 			<h1> Andy Jin </h1>
+			<h2> Computer Engineering @ UWaterloo </h2>
+		</div>
 
-        	<h2> Computer Engineering @ UWaterloo</h2>
-
-        	<button class="button resumeButton" onclick="window.location.href='resume.pdf'" target="blank"> Resume </button>
-			<button class="button readButton" onclick="smoothScroll(document.getElementById('footer'))"> Read More </button>
-
-
-			<div id="goUp" class="goUp hide" onclick="smoothScroll(document.getElementById('header'))">
-				<img src="arrowUp.png">
+		<div id = "buttons" class = "buttons">
+				<button class="button resumeButton" onclick="window.location.href='resume.pdf'" target="blank">  Resume </button>
+				<button class="button readButton" onclick="smoothScroll(document.getElementById('footer'))"> Read More </button>
 			</div>
+
+		<div id="header" class="header"></div>
+
+
+		<div id="goUp" class="goUp hide" onclick="smoothScroll(document.getElementById('header'))">
+			<img src="arrowUp.png">
+		</div>
 
             <!-- Possible navigations -->
 			<div id="software" class="software menu hide" onclick="window.location.href='http://www.andy-jin.com/software'">
-				<h1> Software Projects </h1>
-			</div>
+				<h3> Software Projects </h3>
+			</div>'http://www.andy-jin.com/hardware'">
+				<h3> Hardware Projects </h3>
 
-			<div id="hardware" class="hardware menu hide" onclick="window.location.href='http://www.andy-jin.com/hardware'">
-				<h1> Hardware Projects </h1>
+			<div id="hardware" class="hardware menu hide" onclick="window.location.href=
 			</div>
 
 			<div id="aboutMe" class="aboutMe menu hide" onclick="window.location.href='http://www.andy-jin.com/about-me'">
-				<h1> About Me </h1>
+				<h3> About Me </h3>
 			</div>
 
 			<div id="gallery" class="gallery menu hide" onclick="window.location.href='http://www.andy-jin.com/gallery'">
-				<h1> Gallery </h1>
+				<h3> Gallery </h3>
 			</div>
 
 			<div id="footer" class="footer"></div>
 
 			<test></test>
-
-		</homepage>
 
 	</div>
 </body>
