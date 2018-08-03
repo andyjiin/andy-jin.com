@@ -54,7 +54,6 @@ h4 {
   width:100%;
   height:24vh;
   position:absolute;
-  color:white;
   top:50%;
   margin-top: -45vh;
 
@@ -63,17 +62,14 @@ h4 {
   /*Font options*/
   font-family: 'Abel';
   color: #FFFFFF;
-
-  border:solid;
 }
 
 .buttons {
   position:absolute;
-  color: white;
-  border:solid;
-  height:100%;
+  height:100vh;
   width:20vw;
-  left:39.5vw;
+  left:50%;
+  margin-left:-10vw;
 }
 
 .button {
@@ -92,6 +88,8 @@ h4 {
     /*Button properties*/
     width:8vw;
     height:4vw;
+
+    z-index: 3;
 }
 
 .resumeButton {
@@ -99,8 +97,8 @@ h4 {
   background-color: #000000;
   color: white;
   border: 0.2vh solid #FFFFFF;
-  bottom: -1vh;
-  left:52vw;
+  bottom: 72%;
+  left:1vw;
 }
 
 .resumeButton:hover {
@@ -113,8 +111,8 @@ h4 {
   background-color: #000000;
   color: white;
   border: 0.2vh solid #FFFFFF;
-  bottom: -1vh;
-  left:40vw;
+  bottom: 72%;
+  right: 1vw;
 }
 
 .readButton:hover {
@@ -125,14 +123,14 @@ h4 {
 .menu {
     position: fixed;
     width:100%;
-    height:12vh;
+    height:11vh;
     border-style: solid;
     border-color: #FFF;
     border-width: 0.5vh;
     background: transparent;
-    font-size: 0.7vh;
+    font-size: 0.6vh;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 
     /*Font options*/
     font-family: 'Abel';
@@ -140,8 +138,10 @@ h4 {
 }
 
 img {
-  height:9vh;
-  width:auto;
+  height:auto;
+  width:10vw;
+  left:50%;
+  margin-left:-1vw;
 }
 
 .menu:hover {
@@ -150,22 +150,22 @@ img {
 }
 
 .software {
-    bottom: 68%;
+    bottom: 68vh;
     transition: all 1s;
 }
 
 .hardware {
-    bottom: 53%;
+    bottom: 55vh;
     transition: all 1.25s;
 }
 
 .aboutMe {
-  bottom: 38%;
+  bottom: 42vh;
   transition: all 1.5s;
 }
 
 .gallery {
-  bottom: 23%;
+  bottom: 29vh;
   transition: all 1.75s;
 }
 
