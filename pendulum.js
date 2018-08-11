@@ -28,9 +28,6 @@ var anchorX = viewWidth * 0.5;
 var anchorY = viewHeight * 0.3;
 var g = 9.8;
 
-var mathTimeScale = 5.6;
-
-// Graphics variables
 var circ1, circ2, line1, line2, trail1;
 
 function initDrawingCanvas() {
@@ -48,7 +45,7 @@ function initGraphics() {
 }
 
 function update() {
-    var dt = timeStep * mathTimeScale;
+    var dt = timeStep * 5.6;
     mu = 1 + mass1/mass2;
     d2Theta1  =  (g*(Math.sin(Theta2)*Math.cos(Theta1-Theta2)-mu*Math.sin(Theta1))-
         (length2*dTheta2*dTheta2+length1*dTheta1*dTheta1*Math.cos(Theta1-Theta2))
