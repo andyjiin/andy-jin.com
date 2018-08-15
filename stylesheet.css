@@ -1,3 +1,20 @@
+@media (max-height:600px) {
+  .parallax {
+    background-image: url("calvin&hobbes.jpg");
+
+    /* Set a specific height */
+    min-height: 1200px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+  }
+}
+
 @media (min-height: 600px) and (max-height:800px) {
   .parallax {
     background-image: url("calvin&hobbes.jpg");
@@ -284,8 +301,3 @@ img {
     position: fixed;
     top: 0%;
   }
-
-test {
-  position: absolute;
-  top: 1200px;
-}
