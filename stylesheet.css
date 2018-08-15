@@ -275,7 +275,7 @@ img {
 
 .goUp {
   position: fixed;
-  bottom: 84%;
+  bottom: 84vh;
   padding:10% 0 0 47%;
   background: transparent;
   z-index: 2;
