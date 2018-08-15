@@ -9,3 +9,10 @@ body {
 h1 {
 	text-align:center;
 }
+
+.project {
+	border:solid;
+	color:white;
+	width: 100vw;
+	height:10vh;
+}

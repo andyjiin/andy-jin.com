@@ -16,8 +16,8 @@ var div = document.querySelector('test');
 
 var myScrollFunc = function () {
     var y = window.scrollY;
-    console.log(isScrolledIntoView(div));
-    if (y >= yScreen/2 || isScrolledIntoView(div)) {
+    console.log("scroll: " + y);
+    if (y>=yScreen/2) {
         software.className = "software menu show"
         hardware.className = "hardware menu show"
         aboutMe.className = "aboutMe menu show"
