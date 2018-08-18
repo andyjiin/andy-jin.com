@@ -1,56 +1,176 @@
 <!DOCTYPE html>
-<html>
-<title>Andy Jin</title>
-<meta charset="utf-8"/>
-<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<html lang="en">
 
-<body>
-	<div class="parallax">
+  <head>
 
-		<canvas id="drawing_canvas"></canvas>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<div id = "heading" class = "heading">
-			<h1> Andy Jin </h1>
-			<h2> Computer Engineering @ UWaterloo </h2>
-		</div>
+    <title>Andy Jin</title>
 
-		<div id = "buttons" class = "buttons">
-				<button class="button resumeButton" onclick="window.location.href='resume.pdf'" target="blank"> Resume </button>
-				<button class="button readButton" onclick="smoothScroll(document.getElementById('footer'))"> Read More </button>
-		</div>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<div id="header" class="header"></div>
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Andy Jin</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex" style="overflow-x: hidden; overflow-y: hidden;">
+      <canvas id="drawing_canvas"></canvas>
+      <test>
+        <h1 class="mb-1" style="color:white;">Andy Jin</h1>
+        <h3 class="mb-5" style="color:white; font-size:1em;">
+          Computer Engineering Student @ UWaterloo
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" style="margin:10px">&nbsp&nbsp&nbsp Resume &nbsp&nbsp&nbsp</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about" style="margin:10px" >Find Out More</a>
+      </test>
+      <div class="overlay" style="position: absolute;"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">About Me</h2>
+            <p class="lead mb-5">Hi! My name is Andy Jin and I am currently a second year Computer Engineering student at the University of Waterloo. I have strong interests in both hardware and software with a specific focus in embedded systems and firmware design/integration. I am also exploring FPGA development and PCB design in my spare time. </p>
+
+            <p class="lead mb-5">I am currently exploring my interests in automotive technology through both design teams and my co-op expereiences but I am open to explore other areas that may interest me in the future :)</p>
 
 
-		<div id="goUp" class="goUp hide" onclick="smoothScroll(document.getElementById('header'))">
-			<img src="arrowUp.png">
-		</div>
+    <div class="container">
+          <img src="img/calvin&hobbes.jpg" class="rounded-circle" style="width:500px; margin-bottom: 50px">
+        </div>
 
-        <!-- Possible navigations -->
-		<div id="software" class="software menu hide" onclick="window.location.href='http://www.andy-jin.com/software'">
-				<h3> Software Projects </h3>
-		</div>
-				
-		<div id="hardware" class="hardware menu hide" onclick="window.location.href='http://www.andy-jin.com/hardware'">
-			<h3> Hardware Projects </h3>
-		</div>
+            <div class="container">
+              <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="#">
+                 <i class="icon-doc"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="#">
+                <i class="icon-social-linkedin"></i>
+              </a>
+              </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        </div>
 
-		<div id="aboutMe" class="aboutMe menu hide" onclick="window.location.href='http://www.andy-jin.com/about-me'">
-			<h3> About Me </h3>
-		</div>
+      </div>
+    </section>
 
-		<div id="gallery" class="gallery menu hide" onclick="window.location.href='http://www.andy-jin.com/gallery'">
-			<h3> Gallery </h3>
-		</div>
+    <section class="content-section" id="portfolio" style="background-color: #252526;">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h2 style="font-size: 40px; color:white"> Projects </h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2> MSXII - Driver Display </h2>
+                  <p class="mb-0"> Driver Display module for the MSXII Solar Car </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/displayboard.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2> ALARMO 9000 </h2>
+                  <p class="mb-0"> A smart alarm clock embedded system built using an Onion Omega 2 microprocessor </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/alarmo9000.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2> imhungry </h2>
+                  <p class="mb-0"> A sentient resturant finder which recommends resturants by use of Natural Language Processing using Amazon Alexa </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/imhungry.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2> Hotline Brawl 2 </h2>
+                  <p class="mb-0"> An object-orientated networked top-down shooter game </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/hotlinebrawl2.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<div id="footer" class="footer"></div>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-	</div>
-</body>
+    <!-- Bootstrap core JavaScript -->
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-<!-- script declaration -->
-<script src="menu.js"></script>
-<script src="pendulum.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/stylish-portfolio.js"></script>
+
+    <script src="js/pendulum.js"></script>
+
+  </body>
 
 </html>
