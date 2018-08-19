@@ -66,7 +66,7 @@ body{
   height:auto;
   padding-top:8rem;
   padding-bottom:8rem;
-  background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(img/calvin&hobbes.jpg);
+  background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(calvin&hobbes.jpg);
   background-position:center center;
   background-repeat:no-repeat;
   background-size:cover;
@@ -196,7 +196,7 @@ body{
   max-width: 30rem;
 }
 
-.portfolio-item {
+.project-item {
   display: block;
   position: relative;
   overflow: hidden;
@@ -204,7 +204,7 @@ body{
   margin: auto auto 1rem;
 }
 
-.portfolio-item .caption {
+.project-item .caption {
   display: flex;
   height: 100%;
   width: 100%;
@@ -215,51 +215,51 @@ body{
   z-index: 1;
 }
 
-.portfolio-item .caption .caption-content {
+.project-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
+.project-item .caption .caption-content h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 
-.portfolio-item .caption .caption-content p {
+.project-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
 }
 
-.portfolio-item {
+.project-item {
   max-width: none;
   margin: 0;
 }
 
-.portfolio-item .caption {
+.project-item .caption {
   -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
   -webkit-clip-path: inset(0px);
   clip-path: inset(0px);
 }
 
-.portfolio-item .caption .caption-content {
+.project-item .caption .caption-content {
   transition: opacity 0.25s;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
 }
   
-.portfolio-item img {
+.project-item img {
   -webkit-transition: -webkit-clip-path 0.25s ease-out;
   -webkit-clip-path: inset(-1px);
   clip-path: inset(-1px);
 }
   
-.portfolio-item:hover img {
+.project-item:hover img {
   -webkit-clip-path: inset(2rem);
   clip-path: inset(2rem);
 }
   
-.portfolio-item:hover .caption {
+.project-item:hover .caption {
   background-color: rgba(40, 40, 40, 0.8);
   -webkit-clip-path: inset(2rem);
   clip-path: inset(2rem);
