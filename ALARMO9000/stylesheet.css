@@ -1,0 +1,51 @@
+body,html{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:'Abel';
+}
+
+.btn-xl{
+  padding:1.25rem 2.5rem;
+}
+
+.content-section{
+  padding-top:4rem;
+  padding-bottom:1.5rem;
+}
+
+.content-section-heading h2{
+  font-size:3rem;
+}
+
+.content-section-heading h3{
+  font-size:1rem;
+  text-transform:uppercase;
+}
+
+ h1,h2,h3,h4,h5,h6{
+  font-weight:700;
+}
+
+.social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: black;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  background-color: #282828;
+  text-decoration: none;
+}
+
+img {
+  height:15rem;
+  padding:1rem;
+}

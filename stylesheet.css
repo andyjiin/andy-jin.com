@@ -345,3 +345,16 @@ test {
   text-align: center;
   top:3vh;
 }
+
+.profile {
+  width:15rem; 
+  margin-bottom: 50px;
+}
+
+@media (min-width:992px){
+  .profile {
+    width:30rem; 
+    margin-bottom: 50px;
+  }
+}
+
