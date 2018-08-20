@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MSXII - Display Board">
+    <meta name="author" content="Andy Jin">
+
+    <title>MSXII - Driver Display </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <!-- Stylesheet-->
+    <link href="stylesheet.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 50px">MSXII - Driver Display </h2>
+            <p class="lead mb-5" style = "font-style:italic;"> Driver Display for MSXII solar car </p>
+
+            <p class="lead mb-5" > TECHNOLOGY: Altium | STM32F0 | Linux <br/> LANGUAGE: C </p>
+
+            <li class="list-inline-item">
+              <a class="social-link text-white mr-3" style = "width:10rem; font-size: 1rem; "  href="https://www.andy-jin.com">
+                <i class="icon-home"></i>
+                Back Home
+              </a>
+              </li>
+            <li class="list-inline-item">
+              <a class="social-link text-white" style = "width:10rem; font-size: 1rem;" href="https://github.com/uw-midsun">
+                <i class="icon-social-github"></i>
+                View on GitHub
+              </a>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section bg-dark" id="about">
+      <div class="container text-left">
+        <p class="lead mb-5 text-white" style = "font-size: 1rem;"> &nbsp  &nbsp  &nbsp  &nbsp The MSXII is the 12th generation solar car which is designed and built entirely from scratch by members of the University of Waterloo design team, <a class = "hyperlink" href="http://www.uwmidsun.com/">Midnight Sun</a>. The solar car was built for the American Solar Challenge (ASC) in 2018 and the World Solar Challenge (WSC) in 2019. </p>
+
+        <div class="container text-center">
+          <img class = "largeimg" src="midnightsun.jpg">
+        </div>
+
+        <p class="lead mb-5 text-white" style = "font-size: 1rem;"> <br/> &nbsp  &nbsp  &nbsp  &nbsp Over the course of 8 months, I helped design the driver display module for the in-vehicle display system. For the first 4 months, I was a part of the hardware team where I designed and prototyped the PCB for the internal driver display board which included features such as an ambient light sensor, step-down DC/DC switching regulator, CAN-to-UART convertor and RTC with crystal oscillator. Because we were designing the board from scratch, a lot of time and effort was put into initial schematic design and hardware part selection. <br/> <br/> &nbsp  &nbsp  &nbsp  &nbsp For the final 4 months I transferred to the firmware team where I started on the firmware implementation of the driver display module. This included auto-brightness adjustments based on ambient light readings sampled from the ADC and adjusted via PWM and the relaying of information from the CAN bus to the LCD screen. </p>
+
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  </body>
+
+</html>
