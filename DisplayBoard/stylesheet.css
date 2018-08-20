@@ -46,6 +46,29 @@ body{
 }
 
 img {
-  height:15rem;
   padding:1rem;
+}
+
+.smallimg {
+  height:15rem;
+}
+
+.largeimg {
+  height:15rem;
+}
+
+@media (min-width:992px){
+  .largeimg {
+    height:30rem; 
+  }
+}
+
+.hyperlink {
+  color:#6d9ce8;
+  text-decoration: none
+}
+
+.hyperlink:hover {
+  color:#2f68c4;
+  text-decoration: none
 }
