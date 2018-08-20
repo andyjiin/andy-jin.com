@@ -1,1 +1,1 @@
-Personal Website located at www.andy-jin.com
+Personal Website located at https://www.andy-jin.com/
