@@ -49,3 +49,15 @@ img {
   height:15rem;
   padding:1rem;
 }
+
+.wideimg {
+  width:20rem;
+  height:auto;
+}
+
+@media (min-width:992px){
+  .wideimg {
+    width:40rem;
+    height:auto;
+  }
+}

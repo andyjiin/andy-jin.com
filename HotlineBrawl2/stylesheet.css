@@ -54,12 +54,17 @@ img {
 }
 
 .largeimg {
-  height:15rem;
+  height:10rem;
 }
 
 @media (min-width:992px){
   .largeimg {
     height:30rem; 
+  }
+
+  .wideimg {
+    width:40rem;
+    height:auto;
   }
 }
 
@@ -71,4 +76,9 @@ img {
 .hyperlink:hover {
   color:#2f68c4;
   text-decoration: none
+}
+
+.wideimg {
+  width:20rem;
+  height:auto;
 }
