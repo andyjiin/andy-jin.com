@@ -57,7 +57,7 @@ img {
 
 @media (min-width:992px){
   .wideimg {
-    width:40rem;
+    width:30rem;
     height:auto;
   }
 }
