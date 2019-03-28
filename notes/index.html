@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="imhungry">
+    <meta name="author" content="Andy Jin">
+
+    <title> imhungry </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <!-- Stylesheet-->
+    <link href="stylesheet.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="https://www.andy-jin.com">Andy Jin</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="https://www.andy-jin.com">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#latency_bandwidth_throughput_overhead"> Latency vs. Bandiwdth vs. Throughout vs. Overhead </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#can">CAN</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#uart">UART</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#i2c">I2C</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#spi">SPI</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- latency vs. bandwidth vs. throughput vs. overhead -->
+    <section class="content-section bg-light" id="latency_bandwidth_throughput_overhead">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">Latency vs. Bandiwdth vs. Throughout vs. Overhead </h2>
+            <h2 style="font-size: 20px">28/03/2019</h2>
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Often times in the embedded environment, we hear the terms latency, bandwidth, overhead and throughput and they all seem to refer to the same things. Sometimes, engineers may even refer to one term when they really meant another. So what do these terms really mean individually and how do they relate to eachother?   </p>
+
+            <p class="lead mb-2"> ***Latency*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Latency by definition means the amount of time it takes for data to travel from source to destination, usually measured in milliseconds. Generally speaking, the lower the latency the better.  </p>
+
+            <p class="lead mb-2"> ***Bandwidth*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Bandwidth is a measure of how fast data can be transferred over time, usually per second. Generally speaking, the higher the band </p>
+
+            <p class="lead mb-2"> ***Throughput*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Throughput is similar to latency but it is a measure of how much data travels SUCCESSFULLY, usually per second. </p>
+
+            <p class="lead mb-2"> ***Overhead*** </p>
+
+            <p class="lead mb-5 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Overhead is the excess resources required to perform a specific task such as transfer data </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp So if we look at latency we can come to a conclusion that latency doesn't affect the bandwidth but if we have insufficent bandwidth, we can reduce the latency. On this note, our throughput will always be <= our bandwidth and in an ideal situation they would be equal. Finally, overhead can affect both latency and bandwidth. For example, if we have some overhead that requires sending more bits than we need, this can reduce our bandwidth in turn affecting our latency. </p>
+
+            <p class="lead mb-1"> Hope you know what's going on now! </p>
+      </div>
+    </section>
+
+    <!-- CAN -->
+    <section class="content-section bg-light" id="can">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">CAN </h2>
+            <h2 style="font-size: 20px">01/03/2019</h2>
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Controller Area Network (CAN) is a method of communication between electronic devices commonly used in the automotive industry. Now since I have relatively more experience in the automotive industry than any other embedded enviornment I will go more in depth into the functionality and use cases of the CAN protocol.   </p>
+
+            <p class="lead mb-2"> ***Advantages/Disadvantages*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp As automotives become increasingly more reliant on ECUs, the need for a common protocol became a pressing issue. Prior to the introduction of CAN, ECUs were connected point-to-point which works relatively well with a couple of ECUs but in modern day automotives, we may have upwards of 100 ECUs in a single vehicle. The main advantage of CAN is that it reduces the amount of wiring required and it is not prone to electromagnetic interference. The protocol also supports different error detection such as bit error, ack error, form error and CRC error. The main disadvantage of CAN is the fact that the protocol is fairly complex and it requires more software development and maintenance.  </p>
+
+            <p class="lead mb-2"> ***Hardware*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Every CAN node has a Host Controller (ECU/MCU) as well as a CAN controller and CAN tranceiver. The CAN controller converts the message and then the CAN transceiver transmits the message over the serial bus. The CAN nodes do not have a specified master or slave so every node has access to read and write data on the CAN bus. The messages are processed based on priority and all nodes receive all messages on the CAN bus. </p>
+
+            <p class="lead mb-2"> ***Protocol*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp A CAN message has a specific frame structure:  </p>
+
+            <p class="lead mb-1 text-left"> 1-bit SOF indicating the start of the message (0-start) </p>
+
+            <p class="lead mb-1 text-left"> 11-bit identifier which determines which node has access to the bus and to identify the type of message </p>
+
+            <p class="lead mb-1 text-left"> 1-bit RTR or Remote Transmission Request (0-standard, 1-remote) </p>
+
+            <p class="lead mb-1 text-left"> 1-bit IDE or Identifier Extention which is used to specify frame format (0-standard, 1-extended) </p>
+
+            <p class="lead mb-1 text-left"> 1-bit that does nothing </p>
+
+            <p class="lead mb-1 text-left"> 4-bit DLC or Data Length Code which specifies the number of bytes transmitted </p>
+
+            <p class="lead mb-1 text-left"> 64-bits of data </p>
+
+            <p class="lead mb-1 text-left"> 15-bit CRC checksum </p>
+
+            <p class="lead mb-1 text-left"> 2-bit ACK check </p>
+
+            <p class="lead mb-1 text-left"> 7-bit EOF or End of Frame </p>
+
+            <p class="lead mb-5 text-left"> 3-bit IFS or Interframe Space which specifies the minimum number of bits seperating consecutive messages </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp There are 4 different frames which can be used on the bus:  </p>
+
+            <p class="lead mb-1 text-left"> 1. Data frames - node transmits information to any/all nodes in the system </p>
+
+            <p class="lead mb-1 text-left"> 2. Remote frames - seek permission for the tranmission of data from another node </p>
+
+            <p class="lead mb-1 text-left"> 3. Error frame - if transmitting/receiving node detects an error, it will immediately abort transmission and send an error frame containing an error flag </p>
+
+            <p class="lead mb-5 text-left"> 4. Overload frame - generated when the receiving node is not ready to receive more nodes. Provides extra delay between messages </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp CRC Error - the 15-bit CRC is sent and the receiving device would calculate the checksum and verify against the CRC sent. If the values do not match, an error frame is generated </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp ACK Error - the tranmitting node sends a recessive bit in the ACK slot and after the message is received it is replaced by a dominant bit indicating that at least one node has successfully received the message </p>
+      </div>
+    </section>
+
+    <!-- UART -->
+    <section class="content-section bg-light" id="uart">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">UART </h2>
+            <h2 style="font-size: 20px">01/03/2019</h2>
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Unlike SPI or i2c, data being transmitted through UART is done asynchronously which means there is no clock signal to synchronize the output of bits. It is a single-master/single-slave protocol. </p>
+
+            <p class="lead mb-2"> ***Advantages/Disadvantages*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp In terms of hardware, a clear advantage of the UART protocol is the fact that it only requires 2 lines and could handle simultaneous transmission and receiving due to the fact that they have seperate lines. The main drawback of UART is the fact that it is asynchronous. The master and slave devices must agree on a clock rate beforehand and must constantly adjust for differences which increases overhead and the complexity of the protocol. </p>
+
+            <p class="lead mb-2"> ***Hardware*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp As mentioned, devices communicating through UART require 2 lines, RX and TX. The transmitting UART takes data from the data bus (in parallel) and adds a start bit, parity bit and stop bit and transmits the packet serially. </p>
+
+            <p class="lead mb-2"> **Protocol** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp The structure of a UART packet is the following: 1-bit for the start bit, 5-9 data bits, 0-1 parity bits and 1-2 stop bits. </p>
+
+            <p class="lead mb-1 text-left">  1. UART transmission lines are active low which means the lines are usually held high when idle </p>
+
+            <p class="lead mb-1 text-left">  2. To begin transmission, the line is pulled low for one clock cycle </p>
+
+            <p class="lead mb-1 text-left">  3. Data begins tranmission and the receiving device begins reading once it detects a high->low transition </p>
+
+            <p class="lead mb-1 text-left">  4. After the transmission of data, the receiving device counts the number of bits with value 1 and checks if the total is even or odd. Then the receiving device compares it with the parity bit (1-odd and 0-even) </p>
+
+            <p class="lead mb-1 text-left">  5. To indicate stopping of transmission, the transmission line is held from low to high for 2 cycles </p>
+      </div>
+    </section>
+
+
+    <!-- i2c -->
+    <section class="content-section bg-light" id="i2c">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">I2C </h2>
+            <h2 style="font-size: 20px">23/02/2019</h2>
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp The i2c protocol is a multi-slave and multi-master protocol. It is only intended to work short distances and has two main lines: SCL and SDA.  </p>
+
+            <p class="lead mb-2"> ***Advantages/Disadvantages*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp As stated previously, it allows multiple masters to communicate with multiple slave devices however the masters must take turns driving the bus lines and are unable to communciate with eachother. Most I2C devices can communciate at 100kHz - 400kHz but there is some data overhead due to the ACK/NACK bit </p>
+
+            <p class="lead mb-2"> ***Hardware*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp As mentioned above, the I2C bus consists of two main signals, SCL and SDA. The SCL signal is the clock signal generated by the current bus master and the SDA is the data signal. The bus is "open drain" meaning that devices may pull the line low, but cannot drive the line high. Each signal line has a pull-up resistor to restore the signal to high when no device is asserting it low.  </p>
+
+            <p class="lead mb-2"> ***Protocol*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Messages are generally broken down into two frames, the address frame which the master indicates to the slave the message being sent and one or more data frames which are 8-bit data messages. </p>
+
+            <p class="lead mb-1 text-left">  1. Master devices leaves SCL high and SDA low which indicates to ALL slave devices that tranmission is about to start </p>
+
+            <p class="lead mb-1 text-left">  2. he master sends the 7-bit address frame which has a R/W bit at the end (read-1/write-0) </p>
+
+            <p class="lead mb-1 text-left">  3. Control is given to the receiving device after the 8th bit is sent </p>
+
+            <p class="lead mb-1 text-left">  4. The 9th bit is the NACK/ACK bit in which the receiving device must pull the SDA line low before before the NACK/ACK bit is transmitted or else it indicates that the message was not received </p>
+
+            <p class="lead mb-1 text-left">  5. After the address frame is sent the data can begin transmission in 8-bit intervals (all of which are followed by an NACK/ACK bit </p>
+
+            <p class="lead mb-1 text-left">  6. Once all the data is sent, the master will generate a stop condition indicated by a 0->1 (low to high) transition on SDA after a 0->1 transition on SCL while the SCL is still high  </p>
+      </div>
+    </section>
+
+    <!-- SPI -->
+    <section class="content-section bg-light" id="spi">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 style="font-size: 40px">SPI </h2>
+            <h2 style="font-size: 20px">22/02/2019</h2>
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp SPI is a synchronous peripheral interface that allows the serial tranmission of data on seperate bus lines (MISO and MOSI). The protocol has a single-master/multi-slave design and is one of the simpler protocols regarding data transfer.   </p>
+
+            <p class="lead mb-2"> ***Advantages/Disadvantages*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp The receiving hardware can be a simple shift register which is not only simple to use but cheap in terms of hardware. In addition, because it has seperate lines for receiving and transmitting, it is possible to receive and transmit data at the same time which could increase bandwidth. </p>
+
+            <p class="lead mb-2"> ***Hardware*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp Only one side generates the clock signal (master) and because of this, there can only be one master however, multiple slaves are still possible. There must be 3 + n seperate lines connect each slave where n is the number of slave devices (unless daisy-chaining); SCLK, MOSI, MISO and SS. When data is sent from the master toa  slave, it's sent on the MOSI line and the response back is sent on the MISO line. The SS line is active low.   </p>
+
+            <p class="lead mb-2"> ***Protocol*** </p>
+
+            <p class="lead mb-1 text-left"> &nbsp  &nbsp  &nbsp  &nbsp The SPI protocol is relatively simple where the slave that is selected will transmit/receive data according to the clock speed in 8-bit intervals. There is no predefined order and it is entirely up to the designer of the device to indicate whether the information being transmitted is MSB first or LSB first.  </p>
+      </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../menu.js"></script>
+  </body>
+
+</html>
